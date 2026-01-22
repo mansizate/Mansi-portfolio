@@ -771,12 +771,12 @@ const projects: Project[] = [
   // +
   { // 01. AI Docker file optimizer project
     id: "aidockerfileoptimizer",
-    category: "AI and DevOps",
-    title: "AI Dockerfile Optimizer",
+    category: "AI Tool & Machine Learning",
+    title: "Recipe Recommendation System",
     src: "/assets/projects-screenshots/aidockerfileoptimizer/2.png",
     screenshots: ["1.png", "2.png", "3.png"],
     live: "https://ai-docker-file-optimizer.netlify.app/",
-    github:"https://github.com/Abhiz2411/AI-Docker-file-optimizer",
+    github:":https://github.com/mansizate",
     skills: {
       frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
       backend: [PROJECT_SKILLS.openai,PROJECT_SKILLS.netlify],
@@ -785,10 +785,11 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            AI-Docker-file-optimizer helps optimize Dockerfiles for smaller, more efficient images. 
-            Simply paste your Dockerfile, and the app analyzes it for best practices and size 
-            optimization tips. It then provides a refactored, optimized version of the Dockerfile. 
-            Deployed on Vercel, it ensures fast and easy access to Dockerfile optimization.
+            Recipe-Recommendation-System suggests personalized culinary ideas based on
+    available ingredients and dietary preferences. Users input their pantry
+    items, and the app utilizes collaborative or content-based filtering to
+    generate a curated list of matching recipes. It streamlines meal planning
+    and provides detailed cooking instructions to help minimize food waste.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
@@ -804,8 +805,8 @@ const projects: Project[] = [
   },
   { // 02. FinanceMe project
     id: "financeme",
-    category: "DevOps in Banking and Finance",
-    title: "FinanceMe: Complete DevOps Capstone Project",
+    category: "feeds & fuels",
+    title: "Get-inn: Platfrom that feeds & fules",
     src: "/assets/projects-screenshots/financeme/1.png",
     screenshots: ["/assets/projects-screenshots/financeme/1.png"],
     skills: {
@@ -822,28 +823,27 @@ const projects: Project[] = [
       ],
     },
     live: "https://github.com/Abhiz2411/FinanceMe-Devops-Project-01",
-    github: "https://github.com/Abhiz2411/FinanceMe-Devops-Project-01",
+    github: ":https://github.com/mansizate",
     get content() {
       return (
         <div>
           <TypographyP className="font-mono text-2xl text-center">
-            FinanceMe: Complete DevOps Capstone Project
+            Get-inn: Platform that Feeds and Fuels
           </TypographyP>
           <TypographyP className="font-mono ">
-            This project demonstrates the deployment of a DevOps pipeline for a global banking and
-            financial services provider, FinanceMe. The company transitioned from a monolithic 
-            architecture to a microservice-based architecture to handle increased traffic and 
-            scaling challenges. The project involves automating infrastructure provisioning, build 
-            and deployment processes, and continuous monitoring using modern DevOps tools and 
-            AWS services.?
+            Get-inn is a dual-purpose platform designed to modernize restaurant operations while driving 
+    sustainability. It combines a robust food ordering system (referenced from the Taaza architecture) 
+    with a direct integration to the Eco-Regen waste management network. The system creates a closed loop 
+    where food consumption fuels renewable energy generation, supported by secure payments and advanced 
+    predictive analytics.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <TypographyH3 className="my-4 mt-8">Architecture </TypographyH3>
+          <TypographyH3 className="my-4 mt-8">System Architecture </TypographyH3>
           <p className="font-mono mb-2">
-            The project is divided into three main phases:
-            1.Automating Infrastructure Provisioning
-            2.Build and Deployment Automation
-            3.Continuous Monitoring
+            The project is built on three core interconnected modules:
+    1. Smart Ordering & Payment Processing
+    2. Eco-Regen Waste Integration
+    3. ML-Driven Waste Analytics
           </p>
           <SlideShow
             images={[
@@ -851,13 +851,12 @@ const projects: Project[] = [
               `${BASE_PATH}/financeme/2.png`,
             ]}
           />
-          <TypographyH3 className="my-4 mt-8">Automating Infrastructure Provisioning</TypographyH3>
+          <TypographyH3 className="my-4 mt-8">Smart Ordering & Payment Processing</TypographyH3>
           <p className="font-mono mb-2">
-          Terraform is used to create 4 AWS EC2 instances:
-            Jenkins Master Node (for CI/CD pipeline management)
-            Build Server (for application and Docker image builds)
-            Production Server (for deploying Dockerized applications)
-            Monitoring Server (for continuous monitoring of Build and Prod servers)
+          The customer-facing application offers a seamless ordering experience inspired by the Taaza restaurant framework.
+    It features a dynamic menu and cart system, with financial transactions handled securely via:
+    - Integrated Razorpay payment gateway for real-time processing.
+    - User-friendly interface for tracking order status from kitchen to table.
           </p>
           <SlideShow
             images={[
@@ -865,13 +864,13 @@ const projects: Project[] = [
               `${BASE_PATH}/financeme/4.png`,
             ]}
           />
-          <TypographyH3 className="my-4 mt-8">Build and Deployment Automation</TypographyH3>
+          <TypographyH3 className="my-4 mt-8">Eco-Regen Integration</TypographyH3>
 
           <p className="font-mono mb-2">
-          Jenkins is configured for a CI/CD pipeline:
-            Jenkins Master Node is responsible for pipeline orchestration.
-            Build Server is configured as a Jenkins Slave Node to handle application builds and Docker image creation.
-            Ansible is used for automating deployment to the Prod server, where the application is deployed using an Ansible client-server model.
+          This module connects the restaurant directly to the Eco-Regen biogas network.
+    Instead of standard disposal, food waste is logged and routed to partner biogas plants.
+    The system tracks the volume of organic material sent for renewable energy generation,
+    effectively "fueling" the grid with what was previously waste.
           </p>
           <SlideShow
             images={[
@@ -880,11 +879,12 @@ const projects: Project[] = [
               `${BASE_PATH}/financeme/7.png`,
             ]}
           />
-          <TypographyH3 className="my-4 mt-8">Continuous Monitoring </TypographyH3>
+          <TypographyH3 className="my-4 mt-8">ML-Driven Waste Analytics</TypographyH3>
           <p className="font-mono mb-2">
-          Prometheus and Grafana are used for real-time monitoring:
-            Node Exporter is installed on both Build and Prod servers to collect server metrics (CPU, Disk Space, Memory Utilization).
-            Grafana Dashboard is created to visualize these metrics for continuous monitoring.
+          A custom Machine Learning model analyzes historical data on orders versus waste generation.
+    It provides predictive analytics to:
+    - Forecast expected waste levels based on order volume.
+    - Help restaurant owners optimize inventory purchasing to minimize spoilage before it happens.
           </p>
           <SlideShow images={[
                 `${BASE_PATH}/financeme/3.png`,
@@ -898,12 +898,12 @@ const projects: Project[] = [
   },
   { // 03. Portfolio project
     id: "portfolio",
-    category: "Portfolio",
+    category: "personal Portfolio",
     title: "My Portfolio",
     src: "/assets/projects-screenshots/myportfolio/landing.png",
     screenshots: ["assets/projects-screenshots/myportfolio/landing.png"],
-    live: "https://www.abhijitzende.com/",
-    github:"https://github.com/Abhiz2411/3D-interactive-portfolio",
+    live: "https://manseez-portfolio.netlify.app/",
+    github:"https://github.com/mansizate",
     skills: {
       frontend: [
         PROJECT_SKILLS.ts,
@@ -964,12 +964,12 @@ const projects: Project[] = [
   },
   { // 04. Smart parking assitant
     id: "smartparkingassitant",
-    category: "IoT",
-    title: "Smart Parking Assistant",
+    category: "Eco-friendly Solutions",
+    title: "Eco-Regen: waste Management System",
     src: "/assets/projects-screenshots/smartparkingassitant/01.jpeg",
     screenshots: ["01.jpeg", "03.png"],
     live: "https://github.com/Abhiz2411/smart-parking-assistant",
-    github:"https://github.com/Abhiz2411/smart-parking-assistant",
+    github:":https://github.com/mansizate",
     skills: {
       frontend: [PROJECT_SKILLS.python],
       backend: [PROJECT_SKILLS.cplusplus, PROJECT_SKILLS.arduino],
@@ -978,11 +978,12 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            Transform parking with the Smart Parking Assistant, an IoT marvel powered by Arduino 
-            and IR sensors to detect and recommend the best spots in real-time. Enjoy a sleek GUI 
-            that visualizes availability and an intelligent system for quick, optimal decisions. 
-            Built to adapt with customizable hardware and Python-powered software for seamless 
-            integration. Say goodbye to parking woes and hello to smarter space utilization!
+            Eco-Regen facilitates a sustainable waste-to-energy cycle by bridging the
+    gap between restaurants and biogas plants. Restaurants contribute organic
+    food waste, which is efficiently routed to partner plants instead of
+    landfills. The platform ensures this waste is repurposed into clean,
+    renewable energy, promoting a circular economy and reducing environmental
+    impact.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
@@ -998,12 +999,12 @@ const projects: Project[] = [
   },
   { // 05. Smart Job Tracker project
     id: "smartjobtracker",
-    category: "Full stack",
-    title: "Smart Job Tracker",
+    category: "Frontend",
+    title: "SaaS Dashboard UI",
     src: "/assets/projects-screenshots/smartjobtracker/02.png",
     screenshots: ["01.png", "02.png", "03.png","04.png","05.png","06.png","07.png"],
-    live: "https://job-tracker-application-eight.vercel.app/",
-    github:"https://github.com/Abhiz2411/Job-tracker-application",
+    live: "https://kundan-dashboard-ui.vercel.app",
+    github:":https://github.com/mansizate",
     skills: {
       frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
       backend: [PROJECT_SKILLS.firebase],
@@ -1012,11 +1013,11 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            Track your job applications effortlessly with a sleek, dark-themed app that lets you 
-            manage, filter, and visualize your job search. Organize your applications with a 
-            Kanban board, monitor progress through status updates, and store everything securely. 
-            Enjoy seamless access across devices with a responsive design and email reminders for 
-            interviews. A smarter, more intuitive way to stay on top of your job hunt!
+           A modern, responsive SaaS dashboard interface designed for administrative analytics. 
+            This project features a fully customized UI with interactive charts, data tables, 
+            and a clean layout. Built with React and Tailwind CSS, it demonstrates the ability 
+            to transform open-source templates into unique, professional-grade branding assets 
+            with optimized performance and intuitive navigation.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
@@ -1037,11 +1038,11 @@ const projects: Project[] = [
   { // 06. Savinder Puri portfolio project
     id: "savinderpurisportfolio",
     category: "Web Development",
-    title: "Savinder Puri Portfolio",
+    title: "Old Portfolio | Manseez",
     src: "/assets/projects-screenshots/savinderpuriportfolio/01.png",
     screenshots: ["01.png", "02.png", "03.png","04.png","05.png"],
-    live: "https://savinder-puri.vercel.app/",
-    github:"https://github.com/Abhiz2411/savinder-puri",
+    live: "https://manseez-portfolio.netlify.app/",
+    github:":https://github.com/mansizate",
     skills: {
       frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
       backend: [],
@@ -1053,8 +1054,8 @@ const projects: Project[] = [
             Step into the digital world of Savinder Puri, the beloved DevOps guru and Spiritual 
             Alchemist, with this responsive portfolio website. 🌐✨ Explore his inspiring journey, 
             milestones, and life-changing services blending tech and spirituality. Built with 
-            modern tools like React and TypeScript, it’s a heartfelt tribute to a mentor who 
-            transforms lives. 💻🕊️ Crafted with ❤️ by Abhijit Zende! 🚀
+            modern tools like React and TypeScript, it’s a heartfelt gift to a my beloved Besite who 
+            transforms lives. 💻🕊️ Crafted with ❤️ by Kundan Naik! 🚀
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow

@@ -1,9 +1,9 @@
 const config = {
-  title: "Abhijit Zende | AI Enthusiast",
+  title: "Mansi Zate | Frontend Developer",
   description: {
-    long: "Explore the portfolio of Abhijit, a Computer Science Engineer with 1.5 year experience in Devlopment, DevOps & Database management with hands-on experience in deploying & automating workflows, & collaborating with foreign clients. Strong analytical skills, effective communication, and a team-oriented approach to driving process improvements and delivering results.",
+    long: "Explore the portfolio of Mansi, a Computer Science Engineer with 1 year experience in Devlopment hands-on experience in deploying & automating workflows, & collaborating with clients. Strong analytical skills, effective communication and a team-oriented approach to driving process improvements and delivering results.",
     short:
-      "Discover the portfolio of Abhijit, a AI enthusiast solving real life problems in DevOps and Development.",
+      "Discover the portfolio of Mansi, a Frontend Developer solving real life problems in  Development.",
   },
   keywords: [
     "Abhijit",
@@ -30,19 +30,19 @@ const config = {
     "AIOps",
     "Azure",
   ],
-  author: "Abhijit Zende",
-  email: "abhijitzende75@gmail.com",
-  site: "https://abhijitzende.com",
+  author: "Mansi Zate",
+  email: "mansizate@gmail.com",
+  site: "farm-ledge-indol.vercel.app",
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-    twitter: "https://x.com/_Abhi_Speaks/",
-    linkedin: "https://www.linkedin.com/in/zende-abhijit/",
-    instagram: "https://www.instagram.com/_.celestial_abhi._/",
+    twitter: "https://x.com/manseeez",
+    linkedin: "https://linkedin.com/in/mansee-zate",
+    instagram: "https://www.instagram.com/manseez_?igsh=MXU2MDQ3dHllYjlwdw==",
     facebook: "https://www.facebook.com/profile.php?id=100010029821759",
-    github: "https://github.com/Abhiz2411/",
+    github: "https://github.com/mansizate",
   },
 };
 export { config };

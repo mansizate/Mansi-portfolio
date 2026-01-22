@@ -43,26 +43,26 @@ import { TbTerminal2 } from "react-icons/tb";
 const CONTACT_LINKS = [
   {
     name: "Email",
-    content: "abhijitzende75@gmail",
-    href: "mailto:abhijitzende75@gmail.com",
+    content: "mansizate@gmail.com",
+    href: "mailto:mansizate@gmail.com",
     icon: <FaEnvelope height={"50px"} />,
   },
   {
     name: "Phone",
     content: "1234567890",
-    href: "tel:8308509180",
+    href: "tel:9545791517",
     icon: <FaPhone height={"50px"} />,
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/zende-abhijit/",
-    content: "/zende-abhijit",
+    href: "www.linkedin.com/in/mansee-zate",
+    content: "/Zate-Mansi",
     icon: <FaLinkedin height={"50px"} />,
   },
   {
     name: "GitHub",
-    href: "https://github.com/Abhiz2411",
-    content: "/naresh-khatri",
+    href: "https://github.com/mansizate",
+    content: "/Mansi-zate",
     icon: <FaGithub height={"50px"} />,
   },
 ];

@@ -64,7 +64,7 @@ const HeroSection = () => {
                       side="top"
                       className="dark:bg-white dark:text-black"
                     >
-                      theres something waiting for you in devtools
+                      there's something waiting for you in devtools
                     </TooltipContent>
                   </Tooltip>
                 </BlurIn>
@@ -76,14 +76,14 @@ const HeroSection = () => {
                       "cursor-default font-display sm:text-xl md:text-xl whitespace-nowrap bg-clip-text "
                     )}
                   >
-                    AI Enthusiast
+                    Web Developer | Programmer | Tech Enthusiast
                   </p>
                 </BlurIn>
               </div>
               <div className="mt-8 md:ml-2 flex flex-col gap-3">
                 <Link
                   href={
-                    "https://drive.google.com/file/d/1vjtWfqYGMIMK_rlBnmDEpKco9MiEaQss/view"
+                    "https://drive.google.com/file/d/1Oe_MmPgjvVvt7MFIJ0L-Tq4LO7Tvcst1/view?usp=drivesdk"
                   }
                   target="_blank"
                   className="flex-1"
