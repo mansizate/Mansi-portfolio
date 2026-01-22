@@ -64,7 +64,7 @@ const HeroSection = () => {
                       side="top"
                       className="dark:bg-white dark:text-black"
                     >
-                      there's something waiting for you in devtools
+                      there&apos;s something waiting for you in devtools
                     </TooltipContent>
                   </Tooltip>
                 </BlurIn>
