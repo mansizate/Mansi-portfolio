@@ -870,7 +870,7 @@ const projects: Project[] = [
           This module connects the restaurant directly to the Eco-Regen biogas network.
     Instead of standard disposal, food waste is logged and routed to partner biogas plants.
     The system tracks the volume of organic material sent for renewable energy generation,
-    effectively "fueling" the grid with what was previously waste.
+    effectively fueling the grid with what was previously waste.
           </p>
           <SlideShow
             images={[
